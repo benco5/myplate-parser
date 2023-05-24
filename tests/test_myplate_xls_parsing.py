@@ -5,8 +5,8 @@ from datetime import datetime
 import xlwt
 import pandas as pd
 import numpy as np
-from helpers import formatted_datestring, write_sheet_data
-from mypparser import MyPlateDetailedExportParser as mpp
+from tests.test_helpers import formatted_datestring, write_sheet_data
+from myplate_parser.mypparser import MyPlateDetailedExportParser as mpp
 
 XLS_TEST_FILENAME = "example.xls"
 
