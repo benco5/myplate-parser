@@ -1,10 +1,19 @@
 # MyPlate Parser
 
-A Python package that parses and transforms Livestrong MyPlate app's detailed-level meal tracking data into a more user-friendly format.
+A Python package that parses and transforms Livestrong MyPlate app's semi-structured, detailed-level meal-tracking data into a more user-friendly structured format.
+
+## **⚠️ Repository Status Update (August 2023) ⚠️**
+
+This repository's code was developed for an external application, namely, Livestrong MyPlate meal-tracker, which has since closed and ceased operation. As a result, the code contained here may only be useful for data exports prior to MyPlate's closure and is otherwise provided for historical and educational purposes only.
+
+Feel free to explore the codebase, but please be aware that it's not intended for production use or integration with any current systems.
+
+If you have any questions or concerns, please don't hesitate to reach out.
+
 
 ## Introduction
 
-MyPlate Parser is a Python package designed to simplify the extraction and analysis of detailed meal tracking data from the Livestrong MyPlate app. The app's exported files, in the .xls format, contain semi-structured data with daily sub-tables, each day having a mix of detailed data and a daily summary. These files are inconveniently structured, particularly for those hoping to perform their own analysis or apply classification or other machine learning algorithms. MyPlate Parser addresses this challenge by transforming the semi-structured data into a structured DataFrame as a more convenient starting point for further cleaning, transformation and analysis.
+MyPlate Parser is a Python package designed to simplify the extraction and analysis of detailed meal-tracking data from the Livestrong MyPlate app. The app's exported files, in the .xls format, contain semi-structured data with daily sub-tables, each day having a mix of detailed data and a daily summary. These files are inconveniently structured, particularly for those hoping to perform their own analysis or apply classification or other machine learning algorithms. MyPlate Parser addresses this challenge by transforming the semi-structured data into a structured DataFrame as a more convenient starting point for further cleaning, transformation and analysis.
 
 By parsing the app's exported files, MyPlate Parser provides a structured DataFrame, allowing users to easily explore and analyze their dietary information. The package also overcomes a (seemingly benign) "Workbook corruption" issue, which users will likely encounter when attempting to use conventional tools like Pandas and xlrd to read detailed-level export files.
 
